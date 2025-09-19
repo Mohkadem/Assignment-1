@@ -1,0 +1,46 @@
+:root {
+    --main-transition: 0.3s;
+}
+html {
+    background-color: black;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+body {
+    overflow: scroll;
+}
+/* Header style begins */
+header {
+    height: 2000px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    transition: var(--main-transition);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    border-radius: 6px;
+    height: 40px;
+    width: 40px;
+}
+ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
