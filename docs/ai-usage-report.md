@@ -1,0 +1,1 @@
+- I used ChatGPT to know what to include in .gitignore file.

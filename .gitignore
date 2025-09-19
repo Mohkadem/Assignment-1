@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Dependency directories (generated files, not source code)
+node_modules/
+vendor/
+
+# Build artifacts
+dist/
+build/
+out/
