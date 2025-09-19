@@ -4,6 +4,7 @@
 html {
     background-color: black;
     color: white;
+
 }
 ul {
     list-style: none;
@@ -13,16 +14,13 @@ body {
 }
 /* Header style begins */
 header {
-    height: 2000px;
-}
-.header {
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
     transition: var(--main-transition);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .logo {
     display: flex;
@@ -43,4 +41,25 @@ a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    transition: var(--main-transition);
+    display: inline-block; /* The default is inline, so it won't work with transform: translateY */
+}
+li:hover a {
+    transform: translateY(-10px);
+}
+/* main style begins */
+.main h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+}
+.main p {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
