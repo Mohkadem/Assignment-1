@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="icon" href=""> <!-- favicon -->
 </head>
 <body>
     <header>
-        
             <div class="logo">
                 <h2>Portfolio</h2>
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
     </header>
-    <section class="main">
+    <section class="home" id="home">
+        <video autoplay muted loop playsinline
+        src="/assets/videos /trimmed.mp4"></video>
         <h1>
-            <strong>Welcome, To My Space</strong>
+            <strong>Welcome To My <span>Space</span></strong>
         </h1>
-        <p>Here Iam gonna share everything about my projects. Books I'am reading, Experience I have, Stories and Events</p>
+        <p>Where I'am gonna share everything about my projects. Books I'am reading, Experience I have, Stories and Events</p>
     </section>
-    <script src="./js/script.js"></script>
 
+    <div class="statistics"></div>
+    <!-- About section begins -->
+    <section class="about-me" id="about-me">
+    </section>
+    <script type = "module" src="./js/script.js"></script> <!-- I explain why it has type = "module" in ai-usage-report.-->
 </body>
 </html>

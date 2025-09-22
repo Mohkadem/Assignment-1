@@ -1,3 +1,4 @@
+import {statistics} from './constants.js'
 let header = document.querySelector('header');
 let listElements = document.querySelectorAll('a')
 window.addEventListener('scroll', () => {
@@ -20,3 +21,14 @@ window.addEventListener('scroll', () => {
         })
     }
 })
+let stats = document.querySelector(".statistics")
+statistics.map((el) => {
+    let div = document.createElement('div');
+    let h1 = document.createElement("h1");
+    let p = document.createElement("p")
+    h1.textContent = el.value;
+    p.textContent = el.title;
+    div.appendChild(h1);
+    div.appendChild(p);
+    stats.appendChild(div)
+})  
